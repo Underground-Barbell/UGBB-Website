@@ -11,7 +11,7 @@ export default function Header(){
     return (
         <header
             id="Header"
-            className="max-h-screen w-full flex justify-between items-center mt-7 fixed top-0"
+            className="max-h-screen w-full flex justify-between items-center mt-7 fixed top-0 z-20"
         >
             <div
                 id="LogoContainer"
