@@ -9,6 +9,7 @@
     --font-dosis: "Dosis", sans-serif;
 
     --color-ugbb-red-main: #902923;
+    --color-ugbb-red-sec: #A22C29;
 }
 
 .text-border {
@@ -17,4 +18,12 @@
             -2px -2px 0 black,
             2px -2px 0 black,
             -2px 2px black;
+}
+
+.text-border-red {
+    text-shadow:
+            2px 2px 0 #A22C29,
+            -2px -2px 0 #A22C29,
+            2px -2px 0 #A22C29,
+            -2px 2px #A22C29;
 }
