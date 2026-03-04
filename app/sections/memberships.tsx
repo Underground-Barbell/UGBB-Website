@@ -73,9 +73,6 @@ export default function Memberships(){
                     </div>
                 </div>
 
-
-
-
                 <div
                     id="OtherMembershipsContainer"
                     className="mr-16 ml-4 m-10 w-3/5"
