@@ -27,3 +27,11 @@
             2px -2px 0 #A22C29,
             -2px 2px #A22C29;
 }
+
+.text-border-white {
+    text-shadow:
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px 2px white;
+}
