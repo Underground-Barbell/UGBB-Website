@@ -65,9 +65,8 @@ export default function Memberships(){
                             className="text-center p-5 flex flex-col items-center"
                         >
                             <Link href="/">
-                                <span className="text-black font-dosis font-bold text-xl">Visit Contact to Get Setup</span>
+                                <span className="font-sans-bartle text-ugbb-red-sec text-xl mb-1">Visit Contact to Get Setup</span>
                             </Link>
-                            <hr className="border-2 border-ugbb-red-main w-1/2"/>
                         </div>
 
                     </div>
