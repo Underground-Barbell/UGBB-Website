@@ -38,10 +38,10 @@ export default function Home() {
             <Locations />
         </div>
         <div>
-            <Classes />
+            <Sponsors />
         </div>
         <div>
-            <Sponsors />
+            <Classes />
         </div>
         <div>
             <Contact />
