@@ -10,7 +10,7 @@ export default function Contact(){
     return (
         <section
             id="Contact"
-            className="bg-gray-100 flex flex-col justify-center items-center pb-18"
+            className="bg-gray-100 flex flex-col justify-center items-center pb-18 border-b-28 border-ugbb-red-sec"
         >
             <h2 className="font-sans-bartle text-5xl text-white text-border-red mt-5">CONTACT US</h2>
 
