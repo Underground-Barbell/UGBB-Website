@@ -1,4 +1,40 @@
+@import "https://fonts.google.com/specimen/BBH+Sans+Bogle";
+@import "https://fonts.google.com/specimen/BBH+Sans+Bartle";
+@import "https://fonts.google.com/specimen/Dosis";
 @import "tailwindcss";
+
+@theme {
+    --font-sans-bogle: "BBH Sans Bogle", sans-serif;
+    --font-sans-bartle: "BBH Sans Bartle", sans-serif;
+    --font-dosis: "Dosis", sans-serif;
+
+    --color-ugbb-red-main: #902923;
+    --color-ugbb-red-sec: #A22C29;
+}
+
+.text-border {
+    text-shadow:
+            2px 2px 0 black,
+            -2px -2px 0 black,
+            2px -2px 0 black,
+            -2px 2px black;
+}
+
+.text-border-red {
+    text-shadow:
+            2px 2px 0 #A22C29,
+            -2px -2px 0 #A22C29,
+            2px -2px 0 #A22C29,
+            -2px 2px #A22C29;
+}
+
+.text-border-white {
+    text-shadow:
+            2px 2px 0 white,
+            -2px -2px 0 white,
+            2px -2px 0 white,
+            -2px 2px white;
+}
 
 @theme{
     --color-primary: #902923;
