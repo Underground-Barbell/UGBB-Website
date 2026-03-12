@@ -14,7 +14,7 @@ export default function About(){
         >
             <div
                 id="AboutInfoContainer"
-                className="relative left-12 w-fit"
+                className=""
             >
                 <h2 className="font-sans-bartle text-5xl text-border-red">ABOUT</h2>
                 <h2 className="font-sans-bartle text-5xl text-border-red">UGBB</h2>

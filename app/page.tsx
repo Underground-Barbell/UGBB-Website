@@ -40,9 +40,9 @@ export default function Home() {
         <div>
             <Sponsors />
         </div>
-        <div>
-            <Classes />
-        </div>
+        {/*<div>*/}
+        {/*    <Classes />*/}
+        {/*</div>*/}
         <div>
             <Contact />
         </div>

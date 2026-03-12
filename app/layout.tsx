@@ -14,7 +14,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body
-        className="max-w-fit"
+        className=""
       >
         <Header />
         {children}
