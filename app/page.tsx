@@ -16,36 +16,36 @@ export default function Home() {
         <div>
             <Hero />
         </div>
-        <div>
-            <Introduction />
-        </div>
-        <div>
-            <About />
-        </div>
-        <div>
-            <Memberships />
-        </div>
-        <div>
-            <Started />
-        </div>
-        <div>
-            <Equipment />
-        </div>
-        <div>
-            <Quotes />
-        </div>
-        <div>
-            <Locations />
-        </div>
-        <div>
-            <Sponsors />
-        </div>
+        {/*<div>*/}
+        {/*    <Introduction />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <About />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Memberships />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Started />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Equipment />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Quotes />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Locations />*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*    <Sponsors />*/}
+        {/*</div>*/}
         {/*<div>*/}
         {/*    <Classes />*/}
         {/*</div>*/}
-        <div>
-            <Contact />
-        </div>
+        {/*<div>*/}
+        {/*    <Contact />*/}
+        {/*</div>*/}
     </main>
   );
 }
