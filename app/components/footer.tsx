@@ -14,14 +14,19 @@ export default function Footer(){
         >
             <div
                 id="FooterInfoContainer"
-                className="py-10 px-18 flex justify-between items-center"
+                className="py-5 pb-12 px-10 md:py-10 md:px-18 flex justify-between items-center relative"
             >
                 <Image
                     src={UgbbLogo}
                     alt="UGBB Logo"
                     className="w-[55px] h-[55px]"
                 />
-                <p className="font-dosis font-bold text-gray-500">@ copyright 2025 Underground Barbell</p>
+                <div
+                    id=""
+                    className="w-full text-center absolute left-0 bottom-3"
+                >
+                    <p className="font-dosis font-bold text-gray-500 text-[12px]">@ copyright 2025 Underground Barbell</p>
+                </div>
                 <div
                     id="SpocialLogoIconContainer"
                     className="flex justify-center items-center"

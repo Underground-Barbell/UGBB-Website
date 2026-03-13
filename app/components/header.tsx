@@ -21,7 +21,7 @@ export default function Header(){
                     id="LogoContainer"
                     className=""
                 >
-                    <Image src={UGBB} alt="UGBB Logo" className="w-[120px] h-[120px] md:w-[90px] md:h-[90px] lg:w-[65px] lg:h-[65px]" />
+                    <Image src={UGBB} alt="UGBB Logo" className="w-[90px] h-[90px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px]" />
                 </div>
                 <div
                     className="flex justify-end"
@@ -39,11 +39,11 @@ export default function Header(){
                     </nav>
                     <button
                         id="MenuContainer"
-                        className="bg-black border-white border-4 w-[120px] h-[120px] md:w-[90px] md:h-[90px] lg:w-[65px] lg:h-[65px] text-white flex items-center justify-center"
+                        className="bg-black border-white border-4 w-[90px] h-[90px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px] text-white flex items-center justify-center"
                         onClick={() => setMenu(!menu)}
                     >
                         <Menu
-                            className="h-[105px] w-[105px] md:h-[75px] md:w-[75px] lg:h-[50px] lg:w-[50px]"
+                            className="h-[75px] w-[75px] md:h-[60px] md:w-[60px] lg:h-[50px] lg:w-[50px]"
                         />
                     </button>
                 </div>
