@@ -16,9 +16,9 @@ export default function Home() {
         <div>
             <Hero />
         </div>
-        {/*<div>*/}
-        {/*    <Introduction />*/}
-        {/*</div>*/}
+        <div>
+            <Introduction />
+        </div>
         {/*<div>*/}
         {/*    <About />*/}
         {/*</div>*/}
