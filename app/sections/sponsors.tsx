@@ -10,6 +10,7 @@ export default function Sponsors(){
             className="bg-gray-100 h-[200px] text-center border-b-28 border-ugbb-red-sec"
         >
             <h1 className="text-5xl font-dosis font-bold">Sponsors Section</h1>
+            {/*TODO: add sponsors from jeramy and create horizontal cycle with depth effect*/}
         </section>
     );
 }
