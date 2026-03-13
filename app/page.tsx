@@ -43,9 +43,9 @@ export default function Home() {
         <div>
             <Classes />
         </div>
-        {/*<div>*/}
-        {/*    <Contact />*/}
-        {/*</div>*/}
+        <div>
+            <Contact />
+        </div>
     </main>
   );
 }
