@@ -19,10 +19,10 @@ export default function ClassesCard(props: ClassesCardInterface) {
 
             <div
                 id="ClassesCardTitleContainer"
-                className="mb-15 ml-20 w-full"
+                className="mb-8 lg:mb-15 w-full flex flex-col justify-center items-center"
             >
-                <h4 className="font-sans-bartle text-4xl text-white text-border-red mb-2">{props.title}</h4>
-                <hr className="border-4 border-ugbb-red-main rounded-full w-1/2"/>
+                <h4 className="font-sans-bartle text-3xl md:text-4xl text-white text-border-red mb-2">{props.title}</h4>
+                <hr className="border-4 border-ugbb-red-main rounded-full w-4/5 lg:w-1/2"/>
             </div>
 
             <div
@@ -31,19 +31,19 @@ export default function ClassesCard(props: ClassesCardInterface) {
             >
                 <div
                     id="ClassesCardInfoContainer"
-                    className="w-[650px] bg-white rounded-4xl flex flex-col justify-center items-center"
+                    className="lg:w-[650px] bg-white rounded-4xl flex flex-col justify-center items-center"
                 >
                     <Image
                         src={TempImage}
                         alt="Temp Image"
                         className="w-7/10 rounded-4xl mt-6"
                     />
-                    <h5 className="font-sans-bartle text-3xl text-ugbb-red-sec mt-6">STRENGTH</h5>
+                    <h5 className="font-sans-bartle text-2xl md:text-3xl text-ugbb-red-sec mt-6">STRENGTH</h5>
 
                     <button
                         className="mt-9 w-6/10 flex justify-center items-center bg-ugbb-red-main py-3 rounded-4xl text-white mb-6"
                     >
-                        <span className="font-sans-bartle text-lg text-black text-border-white">VIEW</span>
+                        <span className="font-sans-bartle text-sm md:text-lg text-black text-border-white">VIEW</span>
                         <SquareChartGantt className="w-10 h-10 ml-2"/>
                     </button>
                 </div>
@@ -63,7 +63,7 @@ export default function ClassesCard(props: ClassesCardInterface) {
                         id="ClassesControlsTitleContainer"
                         className="bg-ugbb-red-main rounded-4xl w-1/2 p-2 text-center"
                     >
-                        <p className="font-sans-bartle text-md text-black text-border-white">TOGGLE THROUGH</p>
+                        <p className="font-sans-bartle text-sm md:text-lg text-black text-border-white">TOGGLE THROUGH</p>
                     </div>
 
                     <div

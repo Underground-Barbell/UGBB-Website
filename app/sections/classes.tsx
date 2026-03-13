@@ -12,18 +12,18 @@ export default function Classes(){
         >
             <div
                 id="ClassesAndEventsContainer"
-                className="flex w-full"
+                className="flex flex-col lg:flex-row w-full"
             >
                 <div
                     id="ClassesContainer"
-                    className="m-25 w-1/2"
+                    className="m-12 lg:m-25 lg:w-1/2"
                 >
                     <ClassesCard title={"CLASSES"} />
                 </div>
 
                 <div
                     id="EventsContainer"
-                    className="m-25 w-1/2"
+                    className="m-12 lg:m-25 lg:w-1/2"
                 >
                     <ClassesCard title={"EVENTS"} />
                 </div>
