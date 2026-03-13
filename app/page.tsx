@@ -19,9 +19,9 @@ export default function Home() {
         <div>
             <Introduction />
         </div>
-        {/*<div>*/}
-        {/*    <About />*/}
-        {/*</div>*/}
+        <div>
+            <About />
+        </div>
         {/*<div>*/}
         {/*    <Memberships />*/}
         {/*</div>*/}
