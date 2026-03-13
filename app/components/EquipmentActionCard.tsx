@@ -29,7 +29,7 @@ export default function EquipmentActionCard(props: EquipmentActionCardInterface)
     return (
         <div
             id="EquipmentActionCard"
-            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4"
+            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4 border-4 border-white lg:border-0"
         >
             <h4 className="font-sans-bartle text-xl text-ugbb-red-sec text-border-white">{props.title}</h4>
             <button
