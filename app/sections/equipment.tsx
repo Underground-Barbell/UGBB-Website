@@ -98,7 +98,7 @@ export default function Equipment(){
 
                 <div
                     id="ExtraImagesContainer"
-                    className="hidden lg:visible lg:w-2/5 lg:grid lg:grid-cols-2 lg:grid-rows-3"
+                    className="hidden lg:visible lg:w-2/5 lg:h-full lg:grid lg:grid-cols-2 lg:grid-rows-3"
                 >
                     <Image
                         src={LegExtensionAndCrunch}
