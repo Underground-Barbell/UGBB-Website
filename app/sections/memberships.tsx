@@ -19,20 +19,20 @@ export default function Memberships(){
                 id="MembershipTitleContainer"
                 className="text-center pt-12 pb-10"
             >
-                <h2 className="font-sans-bartle text-5xl text-border-red text-white">MEMBERSHIPS</h2>
+                <h2 className="font-sans-bartle text-2xl md:text-5xl text-border-red text-white">MEMBERSHIPS</h2>
 
             </div>
 
             <div
                 id="CardContainer"
-                className="flex w-full"
+                className="flex flex-col md:flex-row w-full"
             >
                 <div
-                    className="w-2/5"
+                    className="md:w-2/5"
                 >
                     <div
                         id="BasicMembershipContainer"
-                        className="ml-16 mr-4 bg-ugbb-red-sec rounded-4xl"
+                        className="mx-5 md:ml-16 md:mr-4 bg-ugbb-red-sec rounded-4xl"
                     >
                         <div
                             id="BasicMembershipCard"
@@ -58,7 +58,7 @@ export default function Memberships(){
 
                     <div
                         id="MembershipContactLinkContainer"
-                        className="border-2 border-ugbb-red-main ml-16 mr-4 bg-white rounded-4xl"
+                        className="border-2 border-ugbb-red-main mx-5 mb-6 md:mb-0 md:ml-16 md:mr-4 bg-white rounded-4xl"
                     >
                         <div
                             id="NextStepsContactLinkContainer"
@@ -74,7 +74,7 @@ export default function Memberships(){
 
                 <div
                     id="OtherMembershipsContainer"
-                    className="mr-16 ml-4 m-10 w-3/5"
+                    className="mx-5 md:mr-16 md:ml-4 md:m-10 md:w-3/5"
                 >
                     <MembershipCard
                         title="FAMILY"
