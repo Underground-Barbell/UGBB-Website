@@ -25,9 +25,9 @@ export default function Home() {
         <div>
             <Memberships />
         </div>
-        {/*<div>*/}
-        {/*    <Started />*/}
-        {/*</div>*/}
+        <div>
+            <Started />
+        </div>
         {/*<div>*/}
         {/*    <Equipment />*/}
         {/*</div>*/}
