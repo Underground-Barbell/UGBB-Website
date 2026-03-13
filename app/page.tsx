@@ -22,9 +22,9 @@ export default function Home() {
         <div>
             <About />
         </div>
-        {/*<div>*/}
-        {/*    <Memberships />*/}
-        {/*</div>*/}
+        <div>
+            <Memberships />
+        </div>
         {/*<div>*/}
         {/*    <Started />*/}
         {/*</div>*/}
