@@ -37,9 +37,9 @@ export default function Home() {
         <div>
             <Locations />
         </div>
-        {/*<div>*/}
-        {/*    <Sponsors />*/}
-        {/*</div>*/}
+        <div>
+            <Sponsors />
+        </div>
         {/*<div>*/}
         {/*    <Classes />*/}
         {/*</div>*/}
