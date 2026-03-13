@@ -34,9 +34,9 @@ export default function Home() {
         <div>
             <Quotes />
         </div>
-        {/*<div>*/}
-        {/*    <Locations />*/}
-        {/*</div>*/}
+        <div>
+            <Locations />
+        </div>
         {/*<div>*/}
         {/*    <Sponsors />*/}
         {/*</div>*/}

@@ -17,7 +17,7 @@ export default function LocationCard(props: LocationCardInterface) {
     return (
         <div
             id="LocationCard"
-            className="bg-white border-2 border-ugbb-red-sec rounded-4xl mx-25 mb-22"
+            className="bg-white border-2 border-ugbb-red-sec rounded-4xl mx-4 lg:mx-25 mb-22"
         >
             <div
                 id="LocationCardTitleContainer"
