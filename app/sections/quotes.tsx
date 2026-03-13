@@ -7,9 +7,9 @@ export default function Quotes(){
     return (
         <section
             id="Quotes"
-            className="bg-black text-white font-dosis font-bold flex flex-col justify-center items-center pt-10 pb-20 border-b-22 border-ugbb-red-main"
+            className="bg-black text-white font-dosis font-bold text-center lg:flex lg:flex-col lg:justify-center lg:items-center pt-10 pb-20 border-b-20 md:border-b-28 border-ugbb-red-main"
         >
-            <p className="italic text-lg w-1/2">
+            <p className="italic text-lg lg:w-1/2 mx-4">
                 &#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Ut et massa mi. Aliquam in hendrerit urna. Lorem ipsum dolor
                 sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.&#34;
