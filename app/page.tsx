@@ -28,9 +28,9 @@ export default function Home() {
         <div>
             <Started />
         </div>
-        {/*<div>*/}
-        {/*    <Equipment />*/}
-        {/*</div>*/}
+        <div>
+            <Equipment />
+        </div>
         {/*<div>*/}
         {/*    <Quotes />*/}
         {/*</div>*/}
