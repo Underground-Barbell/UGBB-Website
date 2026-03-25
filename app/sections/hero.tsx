@@ -7,16 +7,18 @@ export default function Hero(){
     return (
         <section
             id="Hero"
-            className="bg-[url(/testing-bg-img-hero.png)] h-screen"
+            className=""
         >
             <div
                 id="HeroContainer"
-                className="flex justify-center items-center h-full"
+                className="flex justify-center items-center h-full w-full relative"
             >
-                {/* TODO: Cinematic Video Here */}
+                <video className="w-full h-full" autoPlay={true} muted={true} loop={true}>
+                    <source src="/video/UGBB.mp4" type="video/mp4" />
+                </video>
                 <div
                     id="TitleContainer"
-                    className="flex flex-col justify-center items-center text-ugbb-red-main font-sans-bogle text-7xl md:text-9xl"
+                    className="flex flex-col justify-center items-center text-ugbb-red-main font-sans-bogle text-7xl md:text-9xl absolute animate-fade-in"
                 >
                     <h1 className="text-border">UNDERGROUND</h1>
                     <h1 className="text-border">BARBELL</h1>
