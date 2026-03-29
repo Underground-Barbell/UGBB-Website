@@ -13,13 +13,37 @@
 
     --animate-fade-in: fade-in 1.2s ease-in;
     --animate-fade-in-menu: fade-in 0.2s ease-in;
-    
+    --animate-slide-in-left: slide-in-left 2s ease forwards;
+    --animate-slide-in-right: slide-in-right 2s ease forwards;
+
     @keyframes fade-in {
         0% {
             opacity: 0;
         }
         100% {
             opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-left {
+        from {
+            opacity: 0;
+            transform: translateX(450px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes slide-in-right {
+        from {
+            opacity: 0;
+            transform: translateX(-450px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 
@@ -49,16 +73,16 @@
             -2px 2px white;
 }
 
-@theme{
-    --color-primary: #902923;
-    --color-primaryLight: #A22C29;
-    --color-secondary: #B9BAA3;
-    --color-secondaryLight: #d6d5c9;
-    --color-dark: #0a100d;
+/*@theme{*/
+/*    --color-primary: #902923;*/
+/*    --color-primaryLight: #A22C29;*/
+/*    --color-secondary: #B9BAA3;*/
+/*    --color-secondaryLight: #d6d5c9;*/
+/*    --color-dark: #0a100d;*/
 
-    --bg: var(--color-dark);
-    --textLight: var(--color-neutral-100);
-    --textSlated: var(--color-neutral-300);
+/*    --bg: var(--color-dark);*/
+/*    --textLight: var(--color-neutral-100);*/
+/*    --textSlated: var(--color-neutral-300);*/
 
-    --h1: var(--color-primary);
-}
+/*    --h1: var(--color-primary);*/
+/*}*/
