@@ -97,7 +97,7 @@ export default function Memberships(){
 
                     <div
                         id="MembershipContactLinkContainer"
-                        className="border-2 border-ugbb-red-main mx-5 mb-6 md:mb-0 md:ml-16 md:mr-4 bg-white rounded-4xl"
+                        className="border-2 border-ugbb-red-main mx-5 mb-6 md:mb-0 md:ml-16 md:mr-4 bg-white rounded-4xl hover:scale-105"
                     >
                         <div
                             id="NextStepsContactLinkContainer"
