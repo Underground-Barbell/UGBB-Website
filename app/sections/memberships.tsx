@@ -4,16 +4,55 @@ import Image from "next/image"
 import Link from "next/link"
 import MembershipCard from "@/app/components/MembershipCard";
 import BarbellIcon from "../../public/Icons/Barbell.svg"
-import { SquareArrowDownRight } from 'lucide-react';
+import { SquareArrowDownRight, X } from 'lucide-react';
 
+interface MembershipInfo {
+    id: number,
+    infoDesc: string
+    discDesc: string
+}
 
 export default function Memberships(){
     const [moreInfoToggle, setMoreInfoToggle] = useState<boolean>(false)
+    const [currentInfo, setCurrentInfo] = useState<MembershipInfo>({discDesc: "", id: 0, infoDesc: ""})
+
+    const membershipInfo = [
+        {
+            id: 1,
+            infoDesc: "Lorem 1",
+            discDesc: "Lorem 1"
+        },
+        {
+            id: 2,
+            infoDesc: "Lorem 2",
+            discDesc: "Lorem 2"
+        },
+        {
+            id: 3,
+            infoDesc: "Lorem 3",
+            discDesc: "Lorem 3"
+        },
+        {
+            id: 4,
+            infoDesc: "Lorem 4",
+            discDesc: "Lorem 4"
+        }
+    ]
+
+    const displayRelativeMembershipInformation = (id: number, toggleState: boolean) => {
+        setMoreInfoToggle(toggleState)
+
+        membershipInfo.forEach((item) => {
+            if (item.id === id) {
+                setCurrentInfo(membershipInfo[id - 1])
+            }
+        })
+    }
 
     return (
         <section
             id="Memberships"
-            className="bg-gray-100 pb-22"
+            className="bg-gray-100 pb-22 relative"
         >
             <div
                 id="MembershipTitleContainer"
@@ -48,10 +87,10 @@ export default function Memberships(){
                                 porttitor et imperdiet non, dignissim posuere massa.
                             </p>
                             <button
-                                onClick={() => setMoreInfoToggle(!moreInfoToggle)}
+                                onClick={() => displayRelativeMembershipInformation(4, true)}
                                 className="w-full flex justify-end text-white"
                             >
-                                <SquareArrowDownRight className="w-[45px] h-[45px]"/>
+                                <SquareArrowDownRight className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
                             </button>
                         </div>
                     </div>
@@ -77,23 +116,58 @@ export default function Memberships(){
                     className="mx-5 md:mr-16 md:ml-4 md:m-10 md:w-3/5"
                 >
                     <MembershipCard
+                        id={1}
                         title="FAMILY"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
                         pricePerMonth="75$/MONTH"
+                        setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                     <MembershipCard
+                        id={2}
                         title="BASIC + PERSONAL TRAINING"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
                         pricePerMonth="125$/MONTH"
+                        setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                     <MembershipCard
+                        id={3}
                         title="FAMILY + PERSONAL TRAINING"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
                         pricePerMonth="175$/MONTH"
+                        setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                 </div>
 
             </div>
+
+            {moreInfoToggle && (
+                <div
+                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                >
+                    <div
+                        className="h-full w-8/10 bg-black rounded-4xl relative flex flex-col items-center justify-between"
+                    >
+                        <button
+                            className="text-white absolute top-4 right-4"
+                            onClick={() => setMoreInfoToggle(false)}
+                        >
+                            <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
+                        </button>
+                        <div
+                            className="flex flex-col justify-center items-center text-center mt-15"
+                        >
+                            <h2 className="font-sans-bartle text-border-white text-4xl mb-3">INFORMATION</h2>
+                            <p className="text-white font-bold font-dosis">{currentInfo.infoDesc}</p>
+                        </div>
+                        <div
+                            className="flex flex-col justify-center items-center text-center mb-35"
+                        >
+                            <h2 className="font-sans-bartle text-border-white text-4xl mb-3">DISCLAIMER</h2>
+                            <p className="text-white font-bold font-dosis">{currentInfo.discDesc}</p>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
