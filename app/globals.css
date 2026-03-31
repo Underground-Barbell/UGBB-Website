@@ -16,6 +16,8 @@
     --animate-slide-in-left: slide-in-left 2s ease forwards;
     --animate-slide-in-right: slide-in-right 2s ease forwards;
     --animate-slide-in-bottom: slide-in-bottom 1.5s ease;
+    --animate-slide-in-bottom-2: slide-in-bottom 1.5s ease 0.5s;
+    --animate-slide-in-bottom-3: slide-in-bottom 1.5s ease 1s;
 
     @keyframes fade-in {
         0% {
@@ -54,6 +56,7 @@
             transform: translateY(250px);
         }
         to {
+            opacity: 1;
             transform: translateY(0);
         }
     }
