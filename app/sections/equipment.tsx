@@ -5,11 +5,16 @@ import LegExtensionAndCrunch from "../../public/Equipment/LegExtensionAndCrunch.
 import LocationIcon from "../../public/Icons/map-pinned.svg"
 import MoreInfoIcon from "../../public/Icons/square-arrow-down-right.svg"
 import EquipmentActionCard from "@/app/components/EquipmentActionCard";
-import { CircleArrowLeft } from 'lucide-react';
+import {CircleArrowLeft, X} from 'lucide-react';
 import { CircleArrowRight } from 'lucide-react';
 
 
 export default function Equipment(){
+
+    const [seeImageModal, setSeeImageModal] = useState<boolean>(false);
+    const [seeLocationMenu, setSeeLocationMenu] = useState<boolean>(false);
+    const [seeAllImages, setSeeAllImages] = useState<boolean>(false);
+
 
     function NextImageRight(): void {
         return;
@@ -22,7 +27,7 @@ export default function Equipment(){
     return (
         <section
             id="Equipment"
-            className="bg-black lg:h-[900px]"
+            className="bg-black lg:h-[900px] relative"
         >
             {/* TODO: Placeholder until image carousel logic is worked in */}
             <div
@@ -45,11 +50,16 @@ export default function Equipment(){
                     <div
                         className="lg:h-full lg:pt-15 relative"
                     >
-                        <Image
-                            src={LegExtensionAndCrunch}
-                            alt="Leg Extension and Crunch Image"
+                        <button
+                            onClick={() => setSeeImageModal(true)}
                             className="h-full border-2 border-white rounded-4xl"
-                        />
+                        >
+                            <Image
+                                src={LegExtensionAndCrunch}
+                                alt="Leg Extension and Crunch Image"
+                                className="h-full rounded-4xl"
+                            />
+                        </button>
 
                         <div
                             id="EquipmentButtonContainer"
@@ -57,15 +67,15 @@ export default function Equipment(){
                         >
                             <button
                                 onClick={() => NextImageLeft}
-                                className="text-white bg-black rounded-4xl p-1 ml-4"
+                                className="text-white bg-black rounded-4xl p-1 ml-4 hover:scale-110"
                             >
-                                <CircleArrowLeft className="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-[55px] lg:h-[55px]"/>
+                                <CircleArrowLeft className="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-[55px] lg:h-[55px] active:border-2 active:border-white active:rounded-full"/>
                             </button>
                             <button
                                 onClick={() => NextImageRight}
-                                className="text-white bg-black rounded-4xl p-1 mr-4"
+                                className="text-white bg-black rounded-4xl p-1 mr-4 hover:scale-110"
                             >
-                                <CircleArrowRight className="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-[55px] lg:h-[55px]"/>
+                                <CircleArrowRight className="w-10 h-10 md:w-[50px] md:h-[50px] lg:w-[55px] lg:h-[55px] active:border-2 active:border-white active:rounded-full"/>
                             </button>
                         </div>
 
@@ -81,8 +91,8 @@ export default function Equipment(){
                             id="EquipmentActionButtonContainer"
                             className="hidden lg:flex lg:flex-col lg:absolute lg:bottom-0 lg:right-0 "
                         >
-                            <EquipmentActionCard title="LOCATION" iconId={1} />
-                            <EquipmentActionCard title="VIEW ALL" iconId={2} />
+                            <EquipmentActionCard title="LOCATION" iconId={1} setAction={(value) => setSeeLocationMenu(value)} />
+                            <EquipmentActionCard title="VIEW ALL" iconId={2} setAction={(value) => setSeeAllImages(value)} />
                         </div>
                     </div>
 
@@ -90,8 +100,8 @@ export default function Equipment(){
                         id="EquipmentActionButtonContainer"
                         className="lg:hidden mt-4"
                     >
-                        <EquipmentActionCard title="LOCATION" iconId={1} />
-                        <EquipmentActionCard title="VIEW ALL" iconId={2} />
+                        <EquipmentActionCard title="LOCATION" iconId={1} setAction={(value) => setSeeLocationMenu(value)} />
+                        <EquipmentActionCard title="VIEW ALL" iconId={2} setAction={(value) => setSeeAllImages(value)} />
                     </div>
 
                 </div>
@@ -100,45 +110,119 @@ export default function Equipment(){
                     id="ExtraImagesContainer"
                     className="hidden lg:visible lg:w-2/5 lg:h-full lg:grid lg:grid-cols-2 lg:grid-rows-3"
                 >
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 mr-4 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 mr-4 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 ml-4 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 ml-4 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 mr-4 mt-4 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 mr-4 mt-4 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 ml-4 mt-4 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 ml-4 mt-4 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 mr-4 mt-6 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 mr-4 mt-6 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
-                    <Image
-                        src={LegExtensionAndCrunch}
-                        alt="Leg Extension and Crunch Image"
-                        className="h-9/10 w-9/10 m-2 ml-4 mt-6 rounded-4xl border-2 border-white"
-                    />
+                    <button
+                        onClick={() => setSeeImageModal(true)}
+                    >
+                        <Image
+                            src={LegExtensionAndCrunch}
+                            alt="Leg Extension and Crunch Image"
+                            className="h-9/10 w-9/10 m-2 ml-4 mt-6 rounded-4xl border-2 border-white"
+                        />
+                    </button>
 
                 </div>
             </div>
 
+            {seeAllImages && (
+                <div
+                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                >
+                    <div
+                        className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
+                    >
+                        <button
+                            className="text-white absolute top-4 right-4"
+                            onClick={() => setSeeAllImages(false)}
+                        >
+                            <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
+                        </button>
+                    </div>
+                </div>
+            )}
+
+            {seeLocationMenu && (
+                <div
+                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                >
+                    <div
+                        className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
+                    >
+                        <button
+                            className="text-white absolute top-4 right-4"
+                            onClick={() => setSeeLocationMenu(false)}
+                        >
+                            <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
+                        </button>
+                    </div>
+                </div>
+            )}
+
+            {seeImageModal && (
+                <div
+                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                >
+                    <div
+                        className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
+                    >
+                        <button
+                            className="text-white absolute top-4 right-4"
+                            onClick={() => setSeeImageModal(false)}
+                        >
+                            <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
+                        </button>
+                    </div>
+                </div>
+            )}
 
         </section>
     );

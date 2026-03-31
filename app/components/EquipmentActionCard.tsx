@@ -6,11 +6,11 @@ import { SquareArrowDownRight } from 'lucide-react';
 
 interface EquipmentActionCardInterface {
     title: string,
-    iconId: number
+    iconId: number,
+    setAction: (action: boolean) => void;
 }
 
 export default function EquipmentActionCard(props: EquipmentActionCardInterface) {
-    const [actionButtonToggle, setActionButtonToggle] = useState<boolean>(false)
 
     function iconPicker() {
 
@@ -27,17 +27,18 @@ export default function EquipmentActionCard(props: EquipmentActionCardInterface)
     }
 
     return (
-        <div
+        <button
             id="EquipmentActionCard"
-            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4 border-4 border-white lg:border-0"
+            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4 border-4 border-white lg:border-0 hover:scale-105 active:border-2 active:border-white"
+            onClick={() => props.setAction(true)}
+
         >
             <h4 className="font-sans-bartle text-xl text-ugbb-red-sec text-border-white">{props.title}</h4>
-            <button
-                onClick={() => setActionButtonToggle(!actionButtonToggle)}
+            <div
                 className="text-white"
             >
                 {iconPicker()}
-            </button>
-        </div>
+            </div>
+        </button>
     );
 }
