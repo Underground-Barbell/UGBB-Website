@@ -3,13 +3,14 @@ import { useState } from "react";
 import { SquareArrowDownRight } from 'lucide-react';
 
 interface MemberShipCardInterface {
+    id: number,
     title: string,
     description: string,
-    pricePerMonth: string
+    pricePerMonth: string,
+    setMoreInfoToggle: (moreInfoToggle: boolean, id: number) => void;
 }
 
 export default function MembershipCard(props: MemberShipCardInterface) {
-    const [moreInfoToggle, setMoreInfoToggle] = useState<boolean>(false)
 
     return (
         <div
@@ -28,8 +29,8 @@ export default function MembershipCard(props: MemberShipCardInterface) {
                     className="flex justify-between"
                 >
                     <h5 className="text-3xl font-sans-bartle text-white text-border-red">{props.pricePerMonth}</h5>
-                    <button onClick={() => setMoreInfoToggle(!moreInfoToggle)}>
-                        <SquareArrowDownRight className="w-[45px] h-[45px]"/>
+                    <button onClick={() => props.setMoreInfoToggle(true, props.id)}>
+                        <SquareArrowDownRight className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-black"/>
                     </button>
                 </div>
             </div>
