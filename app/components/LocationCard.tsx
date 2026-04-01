@@ -1,4 +1,3 @@
-import Link from "next/link"
 import {SquareArrowUpRight, X} from 'lucide-react';
 import { MapPin } from 'lucide-react';
 import { Clock8 } from 'lucide-react';
@@ -15,6 +14,19 @@ interface LocationCardInterface {
 export default function LocationCard(props: LocationCardInterface) {
     const [seeLocationModal, setSeeLocationModal] = useState<boolean>(false)
 
+    const [textToCopy, setTextToCopy] = useState(`${props.address}, ${props.city}, ${props.state}`);
+    const [isCopied, setIsCopied] = useState(false);
+
+    const handleCopy = async () => {
+        try {
+            await navigator.clipboard.writeText(textToCopy);
+            setIsCopied(true);
+            setTimeout(() => setIsCopied(false), 2000);
+        } catch (err) {
+            console.error("Failed to copy text:", err);
+        }
+    };
+
     return (
         <div
             id="LocationCard"
@@ -28,16 +40,26 @@ export default function LocationCard(props: LocationCardInterface) {
                 <hr className="border-4 border-ugbb-red-main rounded-full mx-2" />
             </div>
 
-            <div
+            <button
                 id="LocationCardAddressInfoContainer"
-                className="text-black font-dosis text-lg font-bold flex mb-4"
+                className="text-black font-dosis text-lg font-bold flex mb-4 relative"
+                onClick={() => handleCopy()}
             >
                 <MapPin className="w-[55px] h-[55px] ml-4" />
                 <div className="ml-1">
                     <p>{props.address}</p>
                     <p>{props.city}, {props.state}</p>
                 </div>
-            </div>
+                {isCopied && (
+                    <div
+                        className="h-full w-full bg-ugbb-red-main rounded-3xl absolute flex justify-center items-center"
+                    >
+                        <p className="font-dosis font-extrabold text-white">COPIED!</p>
+                    </div>
+                )}
+            </button>
+
+
 
             <div
                 id="LocationCardAvailabiltyInfoContainer"
