@@ -3,9 +3,11 @@ import { useState } from 'react';
 import ContactCard from "@/app/components/ContactCard";
 import InstagramIcon from "../../public/Icons/instagramIcon.png"
 import FacebookIcon from "../../public/Icons/facebookIcon.png"
+import Image from "next/image";
 
 
 export default function Contact(){
+    const [socialView, setSocialView] = useState<boolean>(false);
 
     return (
         <section
@@ -16,37 +18,87 @@ export default function Contact(){
 
             <div
                 id="ContactCardContainer"
-                className="hidden bg-gray-300 h-[375px] w-8/10 rounded-4xl mt-10 lg:flex justify-center items-center"
+                className="hidden bg-gray-300 h-[285px] w-8/10 rounded-4xl mt-10 lg:block"
             >
-                <ContactCard
-                    title="INSTAGRAM"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                    handle="instagram.com/ugbb"
-                    iconData={InstagramIcon}
-                />
-                <ContactCard
-                    title="FACEBOOK"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                    handle="facebook.com/ugbb"
-                    iconData={FacebookIcon}
-                />
+                {socialView && (
+                    <div
+                        className="h-full flex justify-center items-center"
+                    >
+                        <button
+                            className="bg-gray-200 lg:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-left"
+                            onClick={() => setSocialView(false)}
+                        >
+                            <div
+                                className="flex flex-col justify-center items-center"
+                            >
+                                <Image src={FacebookIcon} alt="Facebook Icon" />
+                                <span className="font-sans-bartle text-3xl text-border-red">View Facebook</span>
+                            </div>
+                        </button>
+                        <ContactCard
+                            title="INSTAGRAM"
+                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                            handle="instagram.com/ugbb"
+                            iconData={InstagramIcon}
+                            customStyles="animate-slide-in-right"
+                            setSocialView={(value) => setSocialView(value)}
+                        />
+                    </div>
+                )}
+
+                {!socialView && (
+                    <div
+                        className="h-full flex justify-between items-center "
+                    >
+                        <ContactCard
+                            title="FACEBOOK"
+                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                            handle="facebook.com/ugbb"
+                            iconData={FacebookIcon}
+                            customStyles="animate-slide-in-left"
+                            setSocialView={(value) => setSocialView(value)}
+                        />
+
+                        <button
+                            className="bg-gray-200 lg:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-right"
+                            onClick={() => setSocialView(true)}
+                        >
+                            <div
+                                className="flex flex-col justify-center items-center"
+                            >
+                                <Image src={InstagramIcon} alt="Instagram Icon" />
+                                <span className="font-sans-bartle text-3xl text-border-red">View Instagram</span>
+                            </div>
+                        </button>
+                    </div>
+                )}
+
             </div>
             <div
                 id="ContactCardContainerMobile"
                 className="lg:hidden bg-gray-300 h-[500px] md:w-8/10 mx-3 lg:mx-0 rounded-4xl mt-10 flex justify-center items-center"
             >
-                <ContactCard
-                    title="INSTAGRAM"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                    handle="instagram.com/ugbb"
-                    iconData={InstagramIcon}
-                />
-                {/*<ContactCard*/}
-                {/*    title="FACEBOOK"*/}
-                {/*    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."*/}
-                {/*    handle="facebook.com/ugbb"*/}
-                {/*    iconData={FacebookIcon}*/}
-                {/*/>*/}
+                {socialView && (
+                    <ContactCard
+                        title="INSTAGRAM"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                        handle="instagram.com/ugbb"
+                        iconData={InstagramIcon}
+                        customStyles="animate-fade-in"
+                        setSocialView={(value) => setSocialView(value)}
+                    />
+                )}
+
+                {!socialView && (
+                    <ContactCard
+                        title="FACEBOOK"
+                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                        handle="facebook.com/ugbb"
+                        iconData={FacebookIcon}
+                        customStyles="animate-fade-in"
+                        setSocialView={(value) => setSocialView(value)}
+                    />
+                )}
             </div>
         </section>
     );
