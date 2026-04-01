@@ -1,6 +1,6 @@
 'use client'
-import { useState } from 'react';
 import LocationCard from "@/app/components/LocationCard";
+import Map from "@/app/tools/Map";
 
 
 export default function Locations(){
@@ -24,7 +24,7 @@ export default function Locations(){
                     id="InnerAPIMapContainer"
                     className="h-[650px] lg:h-[845px] border-4 border-ugbb-red-sec mx-4 lg:mx-15 my-5 rounded-4xl"
                 >
-                    {/* TODO: Integrate API Map Here */}
+                    <Map/>
                 </div>
             </div>
 
@@ -37,8 +37,8 @@ export default function Locations(){
                     id="LocationCardContainer"
                     className="mt-15 w-full"
                 >
-                    <LocationCard title="OTTUMWA" address="123 Address Street" city="Ottumwa" state="Iowa" availability="24/7" />
-                    <LocationCard title="HEDRICK" address="123 Address Street" city="Hedrick" state="Iowa" availability="24/7" />
+                    <LocationCard title="OTTUMWA" address="921 Church St" city="Ottumwa" state="Iowa, 52501" availability="24/7" />
+                    <LocationCard title="HEDRICK" address="117 S Main St" city="Hedrick" state="Iowa, 52563" availability="24/7" />
                 </div>
 
             </div>
