@@ -175,7 +175,7 @@ export default function Equipment(){
 
             {seeAllImages && (
                 <div
-                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                    className="h-full w-full fixed z-100 flex justify-center items-center top-5 animate-fade-in-menu"
                 >
                     <div
                         className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
@@ -192,7 +192,7 @@ export default function Equipment(){
 
             {seeLocationMenu && (
                 <div
-                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                    className="h-full w-full fixed z-100 flex justify-center items-center top-5 animate-fade-in-menu"
                 >
                     <div
                         className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
@@ -209,7 +209,7 @@ export default function Equipment(){
 
             {seeImageModal && (
                 <div
-                    className="h-full w-full absolute z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                    className="h-full w-full fixed z-100 flex justify-center items-center top-5 animate-fade-in-menu"
                 >
                     <div
                         className="h-full w-8/10 bg-ugbb-red-main rounded-4xl relative flex flex-col items-center justify-between"
