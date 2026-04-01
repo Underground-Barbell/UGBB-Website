@@ -1,7 +1,8 @@
 import Link from "next/link"
-import { SquareArrowUpRight } from 'lucide-react';
+import {SquareArrowUpRight, X} from 'lucide-react';
 import { MapPin } from 'lucide-react';
 import { Clock8 } from 'lucide-react';
+import {useState} from "react";
 
 interface LocationCardInterface {
     title: string,
@@ -12,12 +13,12 @@ interface LocationCardInterface {
 }
 
 export default function LocationCard(props: LocationCardInterface) {
-
+    const [seeLocationModal, setSeeLocationModal] = useState<boolean>(false)
 
     return (
         <div
             id="LocationCard"
-            className="bg-white border-2 border-ugbb-red-sec rounded-4xl mx-4 lg:mx-25 mb-22"
+            className="bg-white border-2 border-ugbb-red-sec rounded-4xl mx-4 lg:mx-25 mb-22 relative"
         >
             <div
                 id="LocationCardTitleContainer"
@@ -51,14 +52,36 @@ export default function LocationCard(props: LocationCardInterface) {
             </div>
 
             <div
-                id=""
+                id="LocationCardMoreInfoContainer"
                 className="flex justify-end mb-2"
             >
-                <Link href="/" className="flex justify-center items-center text-ugbb-red-main">
+                <button
+                    className="flex justify-center items-center text-ugbb-red-main hover:scale-105 active:underline"
+                    onClick={() => setSeeLocationModal(true)}
+                >
                     <span className="font-sans-bartle text-2xl text-white text-border-red">More Info</span>
-                    <SquareArrowUpRight className="w-[55px] h-[55px] mr-4" />
-                </Link>
+                    <SquareArrowUpRight className="w-[55px] h-[55px] mr-4 active:border-2 active:border-ugbb-red-sec" />
+                </button>
             </div>
+
+            {seeLocationModal && (
+                <div
+                    className="h-full w-full absolute z-100 flex justify-center items-center top-0 bottom-0 animate-fade-in-menu rounded-4xl"
+                >
+                    <div
+                        className="h-full w-full bg-black rounded-4xl relative flex flex-col items-center justify-center"
+                    >
+                        <button
+                            className="text-white absolute top-4 right-4"
+                            onClick={() => setSeeLocationModal(false)}
+                        >
+                            <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
+                        </button>
+                        <h2 className="font-sans-bartle text-border-white text-4xl mb-3">INFORMATION</h2>
+                        <p className="text-white font-bold font-dosis">Lorem</p>
+                    </div>
+                </div>
+            )}
 
         </div>
     );
