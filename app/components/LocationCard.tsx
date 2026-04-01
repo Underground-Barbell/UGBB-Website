@@ -66,7 +66,7 @@ export default function LocationCard(props: LocationCardInterface) {
 
             {seeLocationModal && (
                 <div
-                    className="h-full w-full absolute z-100 flex justify-center items-center top-0 bottom-0 animate-fade-in-menu rounded-4xl border-ugbb-red-sec border-8"
+                    className="h-full w-full absolute z-50 flex justify-center items-center top-0 bottom-0 animate-fade-in-menu rounded-4xl border-ugbb-red-sec border-8"
                 >
                     <div
                         className="h-full w-full bg-black rounded-2xl relative flex flex-col items-center justify-center"

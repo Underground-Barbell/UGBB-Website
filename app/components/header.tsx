@@ -24,7 +24,7 @@ export default function Header(){
     return (
         <header
             id="Header"
-            className="fixed w-full top-0 left-0 z-20 animate-fade-in"
+            className="fixed w-full top-0 left-0 z-100 animate-fade-in"
         >
             <div
                 id="HeaderInfoContainer"

@@ -142,10 +142,10 @@ export default function Memberships(){
 
             {moreInfoToggle && (
                 <div
-                    className="h-full w-full fixed z-100 flex justify-center items-center top-5 animate-fade-in-menu"
+                    className="h-full w-full fixed z-50 flex justify-center items-center top-5 animate-fade-in-menu"
                 >
                     <div
-                        className="h-full w-8/10 bg-black rounded-4xl relative flex flex-col items-center justify-between"
+                        className="h-8/10 w-8/10 bg-black rounded-4xl relative flex flex-col items-center justify-between"
                     >
                         <button
                             className="text-white absolute top-4 right-4"

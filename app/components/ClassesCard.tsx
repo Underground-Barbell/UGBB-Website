@@ -51,7 +51,7 @@ export default function ClassesCard(props: ClassesCardInterface) {
 
                     {moreInfoToggle && (
                         <div
-                            className="h-full w-full absolute z-100 flex justify-center items-center bottom-0 animate-fade-in-menu rounded-4xl"
+                            className="h-full w-full absolute z-50 flex justify-center items-center bottom-0 animate-fade-in-menu rounded-4xl"
                         >
                             <div
                                 className="h-full w-full bg-white rounded-4xl relative flex flex-col items-center justify-center"
