@@ -37,7 +37,7 @@ export default function Contact(){
                         </button>
                         <ContactCard
                             title="INSTAGRAM"
-                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                            description="Send a DM on Instagram to get started with membership options, personal training, or to set up your first visit."
                             handle="https://www.instagram.com/underground.barbell/"
                             iconData={InstagramIcon}
                             customStyles="animate-slide-in-right"
@@ -52,7 +52,7 @@ export default function Contact(){
                     >
                         <ContactCard
                             title="FACEBOOK"
-                            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                            description="Message Jeramy Ingle on Facebook to get set up with a membership, training, or to schedule a time to stop in."
                             handle="https://www.facebook.com/groups/139261723105795"
                             iconData={FacebookIcon}
                             customStyles="animate-slide-in-left"
@@ -81,7 +81,7 @@ export default function Contact(){
                 {socialView && (
                     <ContactCard
                         title="INSTAGRAM"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                        description="Send a DM on Instagram to get started with membership options, personal training, or to set up your first visit."
                         handle="https://www.instagram.com/underground.barbell/"
                         iconData={InstagramIcon}
                         customStyles="animate-fade-in"
@@ -92,7 +92,7 @@ export default function Contact(){
                 {!socialView && (
                     <ContactCard
                         title="FACEBOOK"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
+                        description="Message Jeramy Ingle on Facebook to get set up with a membership, training, or to schedule a time to stop in."
                         handle="https://www.facebook.com/groups/139261723105795"
                         iconData={FacebookIcon}
                         customStyles="animate-fade-in"

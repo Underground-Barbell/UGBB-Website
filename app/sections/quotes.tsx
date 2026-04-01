@@ -15,11 +15,9 @@ export default function Quotes(){
             >
                 <AnimationOnScroll classNameInView={"animate-fade-in opactiy-100"} classNameNotInView={"opacity-0"}>
                     <p className="italic text-lg mx-4">
-                        &#34;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Ut et massa mi. Aliquam in hendrerit urna. Lorem ipsum dolor
-                        sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.&#34;
+                        &#34;The successful warrior is the average man, with laser-like focus.&#34;
                     </p>
-                    <p className="">- Loremizer</p>
+                    <p className="">– Bruce Lee</p>
                 </AnimationOnScroll>
             </div>
 

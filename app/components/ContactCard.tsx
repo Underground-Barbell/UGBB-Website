@@ -33,14 +33,14 @@ export default function ContactCard(props: ContactCardInterface) {
 
             <div
                 id="ContactCardDescriptionContainer"
-                className="flex justify-center items-center bg-ugbb-red-main w-7/10 p-9 rounded-4xl mt-5"
+                className="flex justify-center items-center text-center bg-ugbb-red-main w-7/10 p-9 rounded-4xl mt-5"
             >
                 <p className="text-black font-bold font-dosis text-sm">{props.description}</p>
             </div>
 
             <Link
                 id="ContactCardHandleContainer"
-                className="flex justify-center items-center bg-gray-100 w-7/10 rounded-4xl mt-8 py-2 mb-3"
+                className="flex justify-center items-center bg-gray-100 w-7/10 rounded-4xl mt-8 py-2 mb-3 hover:scale-110"
                 href={props.handle}
                 target="_blank"
             >

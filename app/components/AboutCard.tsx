@@ -4,7 +4,8 @@ import { useState } from "react";
 
 interface AboutCardInterface {
     imageData: StaticImageData,
-    title: string
+    title: string,
+    description: string
 }
 
 export default function AboutCard(props: AboutCardInterface){
@@ -44,10 +45,9 @@ export default function AboutCard(props: AboutCardInterface){
                                 className="h-8/10 flex flex-col justify-center items-center text-center"
                             >
                                 <h2 className="font-sans-bartle text-border text-2xl mb-3">{props.title}</h2>
-                                <p className="text-black font-bold font-dosis mx-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum
-                                    gravida, vestibulum diam ut, vehicula velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum
-                                    gravida, vestibulum diam ut, vehicula velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum
-                                    gravida, vestibulum diam ut, vehicula velit.</p>
+                                <p className="text-black font-bold font-dosis mx-4">
+                                    {props.description}
+                                </p>
                             </div>
                         </div>
                     )}

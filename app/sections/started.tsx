@@ -44,7 +44,7 @@ export default function Started(){
                         className="hidden lg:visible lg:flex lg:mb-5 lg:items-center"
                     >
                         <Link
-                            href="/"
+                            href="/#Memberships"
                             className="hover:scale-110"
                         >
                             <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom"} classNameNotInView={"opacity-0"}>
@@ -53,7 +53,7 @@ export default function Started(){
                         </Link>
                         <h4 className="ml-17 text-ugbb-red-sec text-5xl font-sans-bartle">&</h4>
                         <Link
-                            href="/"
+                            href="/#Contact"
                             className="hover:scale-110"
                         >
                             <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom-2 delay-1000"} classNameNotInView={"opacity-0"}>
@@ -71,7 +71,7 @@ export default function Started(){
                         >
                             <h3 className="font-sans-bartle text-ugbb-red-sec text-lg md:text-2xl mt-3">MEMBERSHIP</h3>
                             <Link
-                                href="/"
+                                href="/#Memberships"
                             >
                                 <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom"} classNameNotInView={"opacity-0"}>
                                     <Image src={SearchIcon} alt="Search Icon" width={125} height={125} className="mb-5"/>
@@ -83,7 +83,7 @@ export default function Started(){
                             <h3 className="font-sans-bartle text-ugbb-red-sec text-lg md:text-2xl mt-5">CONTACT US</h3>
 
                             <Link
-                                href="/"
+                                href="/#Contact"
                             >
                                 <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom-2 delay-1000"} classNameNotInView={"opacity-0"}>
                                     <Image src={SpeakingUserIcon} alt="Speaking User Icon" width={125} height={125} className="mb-5"/>
@@ -105,7 +105,7 @@ export default function Started(){
                     >
                         <h4 className="text-black font-sans-bartle text-lg text-border-white mb-4">START LIFTING!</h4>
                         <Link
-                            href="/"
+                            href="/#Locations"
                             className="hover:scale-110"
                         >
                             <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom-3 delay-1000"} classNameNotInView={"opacity-0"}>
@@ -119,7 +119,7 @@ export default function Started(){
                     >
                         <h4 className="text-black font-sans-bartle text-lg md:text-2xl text-border-white my-4">START LIFTING!</h4>
                         <Link
-                            href="/"
+                            href="/#Locations"
                         >
                             <AnimationOnScroll classNameInView={"transition-opacity opacity-100 animate-slide-in-bottom-3 delay-1000"} classNameNotInView={"opacity-0"}>
                                 <Image src={BarbellPersonIcon} alt="Barbell Person Icon" width={165} height={165} className="rounded-4xl pb-4"/>

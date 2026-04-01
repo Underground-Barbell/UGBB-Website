@@ -99,8 +99,12 @@ export default function LocationCard(props: LocationCardInterface) {
                         >
                             <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-white"/>
                         </button>
-                        <h2 className="font-sans-bartle text-border-white text-4xl mb-3">INFORMATION</h2>
-                        <p className="text-white font-bold font-dosis">Lorem</p>
+                        <div
+                            className="flex flex-col justify-center items-center text-center"
+                        >
+                            <h2 className="font-sans-bartle text-border-white text-3xl mb-3">24/7 Location Disclaimer</h2>
+                            <p className="text-white font-bold font-dosis">This is a 24/7 access facility, giving members the freedom to train on their own schedule at any time of day or night. Members are responsible for maintaining the space, including turning lights on and off, keeping equipment organized, and respecting the environment. This level of access is built on trust, accountability, and a shared commitment to keeping the gym running smoothly for everyone.</p>
+                        </div>
                     </div>
                 </div>
             )}
