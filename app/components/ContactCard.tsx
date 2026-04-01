@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 
 interface ContactCardInterface {
@@ -37,17 +38,19 @@ export default function ContactCard(props: ContactCardInterface) {
                 <p className="text-black font-bold font-dosis text-sm">{props.description}</p>
             </div>
 
-            <div
+            <Link
                 id="ContactCardHandleContainer"
                 className="flex justify-center items-center bg-gray-100 w-7/10 rounded-4xl mt-8 py-2 mb-3"
+                href={props.handle}
+                target="_blank"
             >
                 <Image
                     src={props.iconData}
                     alt={`${props.title} Icon`}
                     className="w-[25px] h-[25px]"
                 />
-                <p className="text-black font-dosis text-md font-bold ml-2">{props.handle}</p>
-            </div>
+                <p className="text-black font-dosis text-md font-bold ml-2">View {props.title}</p>
+            </Link>
 
             <button
                 id="ContactCardMobileControlsContainer"

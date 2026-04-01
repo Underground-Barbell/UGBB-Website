@@ -38,7 +38,7 @@ export default function Contact(){
                         <ContactCard
                             title="INSTAGRAM"
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                            handle="instagram.com/ugbb"
+                            handle="https://www.instagram.com/underground.barbell/"
                             iconData={InstagramIcon}
                             customStyles="animate-slide-in-right"
                             setSocialView={(value) => setSocialView(value)}
@@ -53,7 +53,7 @@ export default function Contact(){
                         <ContactCard
                             title="FACEBOOK"
                             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                            handle="facebook.com/ugbb"
+                            handle="https://www.facebook.com/groups/139261723105795"
                             iconData={FacebookIcon}
                             customStyles="animate-slide-in-left"
                             setSocialView={(value) => setSocialView(value)}
@@ -82,7 +82,7 @@ export default function Contact(){
                     <ContactCard
                         title="INSTAGRAM"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                        handle="instagram.com/ugbb"
+                        handle="https://www.instagram.com/underground.barbell/"
                         iconData={InstagramIcon}
                         customStyles="animate-fade-in"
                         setSocialView={(value) => setSocialView(value)}
@@ -93,7 +93,7 @@ export default function Contact(){
                     <ContactCard
                         title="FACEBOOK"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                        handle="facebook.com/ugbb"
+                        handle="https://www.facebook.com/groups/139261723105795"
                         iconData={FacebookIcon}
                         customStyles="animate-fade-in"
                         setSocialView={(value) => setSocialView(value)}

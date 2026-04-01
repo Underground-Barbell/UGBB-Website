@@ -45,38 +45,38 @@ export default function Header(){
                         className="hidden lg:visible bg-black text-white border-4 border-white w-full lg:flex lg:items-center lg:justify-between px-10 font-dosis font-extrabold text-2xl mr-10"
                     >
                         <Link
-                            href="/"
+                            href="/#About"
                             className="mr-4 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             ABOUT
                         </Link>
                         <Link
-                            href="/"
+                            href="/#Memberships"
                             className="mx-6 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             MEMBERSHIPS
                         </Link>
                         <Link
-                            href="/"
+                            href="/#Equipment"
                             className="mx-6 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             EQUIPMENT
                         </Link>
                         <Link
-                            href="/"
+                            href="/#Locations"
                             className="mx-6 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             LOCATIONS
                         </Link>
                         <Link
-                            href="/"
+                            href="/#Classes"
                             className="mx-6 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             CLASSES/EVENTS
                         </Link>
 
                         <Link
-                            href="/"
+                            href="/#Contact"
                             className="ml-4 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2"
                         >
                             CONTACT
@@ -126,12 +126,12 @@ export default function Header(){
                         <div
                             className="flex flex-col justify-center items-center"
                         >
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">ABOUT</Link>
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">MEMBERSHIPS</Link>
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">EQUIPMENT</Link>
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">LOCATIONS</Link>
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">CLASSES/EVENTS</Link>
-                            <Link href="/" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2">CONTACT</Link>
+                            <Link href="/#About" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>ABOUT</Link>
+                            <Link href="/#Memberships" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>MEMBERSHIPS</Link>
+                            <Link href="/#Equipment" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>EQUIPMENT</Link>
+                            <Link href="/#Locations" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>LOCATIONS</Link>
+                            <Link href="/#Classes" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CLASSES/EVENTS</Link>
+                            <Link href="/#Contact" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CONTACT</Link>
                         </div>
 
                     </div>
