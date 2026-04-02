@@ -19,23 +19,23 @@ export default function Memberships(){
     const membershipInfo = [
         {
             id: 1,
-            infoDesc: "Lorem 1",
-            discDesc: "Lorem 1"
+            infoDesc: "VISIT CONTACT",
+            discDesc: ""
         },
         {
             id: 2,
-            infoDesc: "Lorem 2",
-            discDesc: "Lorem 2"
+            infoDesc: "VISIT CONTACT",
+            discDesc: ""
         },
         {
             id: 3,
-            infoDesc: "Lorem 3",
-            discDesc: "Lorem 3"
+            infoDesc: "VISIT CONTACT",
+            discDesc: ""
         },
         {
             id: 4,
-            infoDesc: "Lorem 4",
-            discDesc: "Lorem 4"
+            infoDesc: "VISIT CONTACT",
+            discDesc: ""
         }
     ]
 
@@ -77,14 +77,12 @@ export default function Memberships(){
                             id="BasicMembershipCard"
                             className="m-10 p-5 text-center flex flex-col items-center"
                         >
-                            <h3 className="text-black font-sans-bartle text-3xl text-border-white mb-4">BASIC</h3>
+                            <h3 className="text-black font-sans-bartle text-3xl text-border-white mb-4">SINGLE</h3>
                             <hr className="border-4 text-white rounded-full mb-6 w-full"/>
-                            <h5 className="text-black font-sans-bartle text-2xl md:text-3xl text-border-white mb-6">- 35$/MONTH -</h5>
+                            <h5 className="text-black font-sans-bartle text-2xl md:text-3xl text-border-white mb-6">- 40$/MONTH -</h5>
                             <Image src={BarbellIcon} alt="Barbell Icon" width={375} height={150} className="mb-6" />
                             <p className="text-white font-dosis font-bold mb-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum
-                                gravida, vestibulum diam ut, vehicula velit. Integer augue eros,
-                                porttitor et imperdiet non, dignissim posuere massa.
+                                Perfect for individuals looking to stay active and healthy. Enjoy full access to all gym facilities and equipment in a welcoming, motivating environment.
                             </p>
                             <button
                                 onClick={() => displayRelativeMembershipInformation(4, true)}
@@ -117,23 +115,23 @@ export default function Memberships(){
                 >
                     <MembershipCard
                         id={1}
-                        title="FAMILY"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                        pricePerMonth="75$/MONTH"
+                        title="COUPLE"
+                        description="Train together and stay motivated as a team. This membership is ideal for partners who want to reach their fitness goals side by side while saving on cost."
+                        pricePerMonth="60$/MONTH"
                         setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                     <MembershipCard
                         id={2}
-                        title="BASIC + PERSONAL TRAINING"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                        pricePerMonth="125$/MONTH"
+                        title="FAMILY"
+                        description="Designed for the whole household. Keep everyone active and healthy with full access for your family in a supportive and family-friendly atmosphere."
+                        pricePerMonth="80$/MONTH"
                         setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                     <MembershipCard
                         id={3}
-                        title="FAMILY + PERSONAL TRAINING"
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum  gravida, vestibulum diam ut, vehicula velit."
-                        pricePerMonth="175$/MONTH"
+                        title="PERSONAL TRAINING"
+                        description="Get customized workouts and expert guidance tailored to your goals. Whether you're just starting out or pushing to the next level, our personal training will help you get results faster. Price quoted when contacted."
+                        pricePerMonth="???$/MONTH"
                         setMoreInfoToggle={(value, id) => displayRelativeMembershipInformation(id, value)}
                     />
                 </div>
@@ -156,13 +154,13 @@ export default function Memberships(){
                         <div
                             className="flex flex-col justify-center items-center text-center mt-15"
                         >
-                            <h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">INFORMATION</h2>
+                            {/*<h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">INFORMATION</h2>*/}
                             <p className="text-white font-bold font-dosis">{currentInfo.infoDesc}</p>
                         </div>
                         <div
                             className="flex flex-col justify-center items-center text-center mb-35"
                         >
-                            <h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">DISCLAIMER</h2>
+                            {/*<h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">DISCLAIMER</h2>*/}
                             <p className="text-white font-bold font-dosis">{currentInfo.discDesc}</p>
                         </div>
                     </div>
