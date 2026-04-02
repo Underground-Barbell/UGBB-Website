@@ -4,7 +4,7 @@ import About from "@/app/sections/about";
 import Memberships from "@/app/sections/memberships";
 import Started from "@/app/sections/started";
 import Equipment from "@/app/sections/equipment";
-import Quotes from "@/app/sections/equipment";
+import Quotes from "@/app/sections/quotes";
 import Locations from "@/app/sections/locations";
 import Classes from "@/app/sections/classes";
 import Sponsors from "@/app/sections/sponsors";
@@ -38,10 +38,10 @@ export default function Home() {
             <Locations />
         </div>
         <div>
-            <Classes />
+            <Sponsors />
         </div>
         <div>
-            <Sponsors />
+            <Classes />
         </div>
         <div>
             <Contact />
