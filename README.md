@@ -1,2 +1,2 @@
 # Underground Barbell Webite
--  Caden & Ashley
+-  Caden
