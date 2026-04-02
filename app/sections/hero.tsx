@@ -13,7 +13,7 @@ export default function Hero(){
                 id="HeroContainer"
                 className="flex justify-center items-end md:items-center md:h-full w-full relative"
             >
-                <video className="w-full h-fit md:h-full" autoPlay={true} muted={true} loop={true}>
+                <video className="w-full h-fit md:h-full" autoPlay={true} muted={true} loop={true} playsInline preload="auto">
                     <source src="/video/UGBB.mp4" type="video/mp4" className="w-fit h-fit" />
                 </video>
                 <div
