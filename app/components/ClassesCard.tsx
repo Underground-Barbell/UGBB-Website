@@ -1,5 +1,4 @@
-import Image from "next/image";
-import TempImage from "../../public/Equipment/LegExtensionAndCrunch.png"
+import Image, {StaticImageData} from "next/image";
 import {SquareChartGantt, X} from 'lucide-react';
 import { CircleArrowLeft } from 'lucide-react';
 import { CircleArrowRight } from 'lucide-react';
@@ -7,6 +6,7 @@ import {useState} from "react";
 
 interface ClassesCardInterface {
     title: string,
+    imageData: StaticImageData
 }
 
 export default function ClassesCard(props: ClassesCardInterface) {
@@ -35,11 +35,11 @@ export default function ClassesCard(props: ClassesCardInterface) {
                     className="desktop:w-[650px] bg-white rounded-4xl flex flex-col justify-center items-center relative"
                 >
                     <Image
-                        src={TempImage}
+                        src={props.imageData}
                         alt="Temp Image"
-                        className="w-7/10 rounded-4xl mt-6"
+                        className="w-7/10 max-h-[550px] rounded-4xl mt-6"
                     />
-                    <h5 className="font-sans-bartle text-2xl md:text-3xl text-ugbb-red-sec mt-6">STRENGTH</h5>
+                    <h5 className="font-sans-bartle text-2xl md:text-3xl text-ugbb-red-sec mt-6">{props.title == "CLASSES" ? "Person Training" : "Powerlifting"}</h5>
 
                     <button
                         className="mt-9 w-6/10 flex justify-center items-center bg-ugbb-red-main py-3 rounded-4xl text-white mb-6 hover:scale-105"
@@ -62,7 +62,7 @@ export default function ClassesCard(props: ClassesCardInterface) {
                                 >
                                     <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-black"/>
                                 </button>
-                                <h2 className="font-sans-bartle text-border-white text-lg desktop:text-4xl mb-3">INFORMATION</h2>
+                                <h2 className="font-sans-bartle text-border-white text-lg desktop:text-4xl mb-3">VISIT CONTACT</h2>
                                 <p className="text-white font-bold font-dosis">Lorem</p>
                             </div>
                         </div>
@@ -70,33 +70,33 @@ export default function ClassesCard(props: ClassesCardInterface) {
                 </div>
 
 
+                {/*NO Classes Given By Jeramy Yet, Possible Future Update*/}
+                {/*<div*/}
+                {/*    id="ClassesControlsContainer"*/}
+                {/*    className="flex justify-center items-center mt-12"*/}
+                {/*>*/}
+                {/*    <div*/}
+                {/*        id="ClassesControlsLeftButton"*/}
+                {/*        className="text-black bg-white rounded-full p-1 mr-3"*/}
+                {/*    >*/}
+                {/*        <CircleArrowLeft className="w-[55px] h-[55px] hover:scale-110 active:border-2 active:border-white rounded-full"/>*/}
+                {/*    </div>*/}
 
-                <div
-                    id="ClassesControlsContainer"
-                    className="flex justify-center items-center mt-12"
-                >
-                    <div
-                        id="ClassesControlsLeftButton"
-                        className="text-black bg-white rounded-full p-1 mr-3"
-                    >
-                        <CircleArrowLeft className="w-[55px] h-[55px] hover:scale-110 active:border-2 active:border-white rounded-full"/>
-                    </div>
+                {/*    <div*/}
+                {/*        id="ClassesControlsTitleContainer"*/}
+                {/*        className="bg-ugbb-red-main rounded-4xl w-1/2 p-2 text-center"*/}
+                {/*    >*/}
+                {/*        <p className="font-sans-bartle text-sm md:text-lg text-black text-border-white">TOGGLE THROUGH</p>*/}
+                {/*    </div>*/}
 
-                    <div
-                        id="ClassesControlsTitleContainer"
-                        className="bg-ugbb-red-main rounded-4xl w-1/2 p-2 text-center"
-                    >
-                        <p className="font-sans-bartle text-sm md:text-lg text-black text-border-white">TOGGLE THROUGH</p>
-                    </div>
+                {/*    <div*/}
+                {/*        id="ClassesControlsLeftButton"*/}
+                {/*        className="text-black bg-white rounded-full p-1 ml-3 "*/}
+                {/*    >*/}
+                {/*        <CircleArrowRight className="w-[55px] h-[55px] hover:scale-110 active:border-2 active:border-white rounded-full"/>*/}
+                {/*    </div>*/}
 
-                    <div
-                        id="ClassesControlsLeftButton"
-                        className="text-black bg-white rounded-full p-1 ml-3 "
-                    >
-                        <CircleArrowRight className="w-[55px] h-[55px] hover:scale-110 active:border-2 active:border-white rounded-full"/>
-                    </div>
-
-                </div>
+                {/*</div>*/}
             </div>
 
 

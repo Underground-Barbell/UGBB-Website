@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react';
 import ClassesCard from "@/app/components/ClassesCard";
+import EventsImage from "../../public/EventsImage.jpg";
+import ClassesImage from "../../public/ClassesImage.jpg";
 
 
 export default function Classes(){
@@ -18,14 +20,14 @@ export default function Classes(){
                     id="ClassesContainer"
                     className="m-12 desktop:m-25 desktop:w-1/2"
                 >
-                    <ClassesCard title={"CLASSES"} />
+                    <ClassesCard title={"CLASSES"} imageData={ClassesImage} />
                 </div>
 
                 <div
                     id="EventsContainer"
                     className="m-12 desktop:m-25 desktop:w-1/2"
                 >
-                    <ClassesCard title={"EVENTS"} />
+                    <ClassesCard title={"EVENTS"} imageData={EventsImage} />
                 </div>
 
             </div>

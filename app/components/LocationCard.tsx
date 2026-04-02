@@ -46,7 +46,7 @@ export default function LocationCard(props: LocationCardInterface) {
                 onClick={() => handleCopy()}
             >
                 <MapPin className="w-[55px] h-[55px] ml-4" />
-                <div className="ml-1">
+                <div className="ml-1 text-start">
                     <p>{props.address}</p>
                     <p>{props.city}, {props.state}</p>
                 </div>
