@@ -30,7 +30,7 @@ export default function LocationCard(props: LocationCardInterface) {
     return (
         <div
             id="LocationCard"
-            className="bg-white border-2 border-ugbb-red-sec rounded-[38px] mx-4 lg:mx-25 mb-22 relative"
+            className="bg-white border-2 border-ugbb-red-sec rounded-[38px] mx-4 desktop:mx-25 mb-22 relative"
         >
             <div
                 id="LocationCardTitleContainer"
@@ -102,8 +102,8 @@ export default function LocationCard(props: LocationCardInterface) {
                         <div
                             className="flex flex-col justify-center items-center text-center"
                         >
-                            <h2 className="font-sans-bartle text-border-white text-3xl mb-3">24/7 Location Disclaimer</h2>
-                            <p className="text-white font-bold font-dosis">This is a 24/7 access facility, giving members the freedom to train on their own schedule at any time of day or night. Members are responsible for maintaining the space, including turning lights on and off, keeping equipment organized, and respecting the environment. This level of access is built on trust, accountability, and a shared commitment to keeping the gym running smoothly for everyone.</p>
+                            <h2 className="font-sans-bartle text-border-white text-lg md:text-3xl mb-3">24/7 Location Disclaimer</h2>
+                            <p className="text-white font-bold font-dosis text-[13px] md:text-lg">This is a 24/7 access facility, giving members the freedom to train on their own schedule at any time of day or night. Members are responsible for maintaining the space, including turning lights on and off, keeping equipment organized, and respecting the environment. This level of access is built on trust, accountability, and a shared commitment to keeping the gym running smoothly for everyone.</p>
                         </div>
                     </div>
                 </div>

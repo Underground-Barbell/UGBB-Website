@@ -27,28 +27,28 @@ export default function Equipment(){
     return (
         <section
             id="Equipment"
-            className="bg-black lg:h-[900px] relative"
+            className="bg-black desktop:h-[900px] relative"
         >
             {/* TODO: Placeholder until image carousel logic is worked in */}
             <div
                 id="EquipmentImagesContainer"
-                className="h-full w-full flex flex-col lg:flex-row items-center lg:items-start p-8"
+                className="h-full w-full flex flex-col desktop:flex-row items-center desktop:items-start p-8"
             >
 
                 <div
                     id="EquipmentTitleContainer"
-                    className="lg:hidden mb-4"
+                    className="desktop:hidden mb-4"
                 >
                     <h2 className="font-sans-bartle text-border-white text-3xl md:text-5xl">EQUIPMENT</h2>
                 </div>
 
                 <div
                     id="CentralEquipmentImageContainer"
-                    className="lg:w-3/5 lg:h-9/10 lg:px-22"
+                    className="desktop:w-3/5 desktop:h-9/10 desktop:px-22"
                 >
 
                     <div
-                        className="lg:h-full lg:pt-15 relative"
+                        className="lg:h-[650px] lg:w-[650px] desktop:h-full desktop:w-full desktop:pt-15 relative"
                     >
                         <button
                             onClick={() => setSeeImageModal(true)}
@@ -63,7 +63,7 @@ export default function Equipment(){
 
                         <div
                             id="EquipmentButtonContainer"
-                            className="absolute bottom-2 lg:bottom-2/5 w-full flex justify-between"
+                            className="absolute bottom-2 desktop:bottom-2/5 w-full flex justify-between"
                         >
                             <button
                                 onClick={() => NextImageLeft}
@@ -82,14 +82,14 @@ export default function Equipment(){
 
                         <div
                             id="EquipmentTitleContainer"
-                            className="hidden lg:block lg:absolute lg:bottom-0 lg:ml-5 lg:mb-5"
+                            className="hidden desktop:block desktop:absolute desktop:bottom-0 desktop:ml-5 desktop:mb-5"
                         >
                             <h2 className="font-sans-bartle text-border-white text-4xl">EQUIPMENT</h2>
                         </div>
 
                         <div
                             id="EquipmentActionButtonContainer"
-                            className="hidden lg:flex lg:flex-col lg:absolute lg:bottom-0 lg:right-0 "
+                            className="hidden desktop:flex desktop:flex-col desktop:absolute desktop:bottom-0 desktop:right-0 "
                         >
                             <EquipmentActionCard title="LOCATION" iconId={1} setAction={(value) => setSeeLocationMenu(value)} />
                             <EquipmentActionCard title="VIEW ALL" iconId={2} setAction={(value) => setSeeAllImages(value)} />
@@ -98,7 +98,7 @@ export default function Equipment(){
 
                     <div
                         id="EquipmentActionButtonContainer"
-                        className="lg:hidden mt-4"
+                        className="desktop:hidden mt-4 flex flex-col justify-center items-center"
                     >
                         <EquipmentActionCard title="LOCATION" iconId={1} setAction={(value) => setSeeLocationMenu(value)} />
                         <EquipmentActionCard title="VIEW ALL" iconId={2} setAction={(value) => setSeeAllImages(value)} />
@@ -108,7 +108,7 @@ export default function Equipment(){
 
                 <div
                     id="ExtraImagesContainer"
-                    className="hidden lg:visible lg:w-2/5 lg:h-full lg:grid lg:grid-cols-2 lg:grid-rows-3"
+                    className="hidden desktop:visible desktop:w-2/5 desktop:h-full desktop:grid desktop:grid-cols-2 desktop:grid-rows-3"
                 >
                     <button
                         onClick={() => setSeeImageModal(true)}

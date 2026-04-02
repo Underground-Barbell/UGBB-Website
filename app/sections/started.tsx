@@ -26,22 +26,22 @@ export default function Started(){
             </div>
             <div
                 id="StartedProcessDiagramContainer"
-                className="w-full mt-10 flex flex-col lg:flex-row justify-center"
+                className="desktop:visible w-full mt-10 flex flex-col desktop:flex-row justify-center items-center"
             >
                 <div
                     id="FirstStepsContainer"
-                    className="lg:w-3/7 mx-5 lg:ml-16 lg:mr-4 border-ugbb-red-main border-2 bg-white rounded-4xl"
+                    className="desktop:w-3/7 mx-5 desktop:ml-16 desktop:mr-4 border-ugbb-red-main border-2 bg-white rounded-4xl"
                 >
                     <div
                         id="FirstStepsTitleContainer"
-                        className="hidden lg:flex lg:visible"
+                        className="hidden desktop:flex desktop:visible"
                     >
                         <h3 className="font-sans-bartle text-ugbb-red-sec text-2xl ml-5 mt-5 mb-1">MEMBERSHIP</h3>
                         <h3 className="font-sans-bartle text-ugbb-red-sec text-2xl ml-15 mt-5 mb-1">CONTACT US</h3>
                     </div>
                     <div
                         id="FirstStepsIconsContainer"
-                        className="hidden lg:visible lg:flex lg:mb-5 lg:items-center"
+                        className="hidden desktop:visible desktop:flex desktop:mb-5 desktop:items-center"
                     >
                         <Link
                             href="/#Memberships"
@@ -64,7 +64,7 @@ export default function Started(){
                     </div>
                     <div
                         id="StartedFirstStepsMobileContainer"
-                        className="lg:hidden flex flex-col justify-center items-center"
+                        className="desktop:hidden flex flex-col justify-center items-center w-[300px] lg:w-[1000px] lg:max-w-[1000px]"
                     >
                         <div
                             className="flex flex-col justify-center items-center"
@@ -97,11 +97,11 @@ export default function Started(){
 
                 <div
                     id="LastStepContainer"
-                    className="lg:w-2/7 mx-5 mt-8 lg:mt-0 lg:mr-16 lg:ml-4 bg-ugbb-red-sec rounded-4xl"
+                    className="desktop:w-2/7 mx-5 mt-8 desktop:mt-0 desktop:mr-16 desktop:ml-4 bg-ugbb-red-sec rounded-4xl"
                 >
                     <div
                         id="LastStepsInfoContainer"
-                        className="hidden lg:visible lg:mx-16 lg:mt-5 lg:flex lg:flex-col lg:items-center lg:justify-center"
+                        className="hidden desktop:visible desktop:mx-16 desktop:mt-5 desktop:flex desktop:flex-col desktop:items-center desktop:justify-center"
                     >
                         <h4 className="text-black font-sans-bartle text-lg text-border-white mb-4">START LIFTING!</h4>
                         <Link
@@ -115,7 +115,7 @@ export default function Started(){
                     </div>
                     <div
                         id="StartedLastStepsMobileContainer"
-                        className="lg:hidden flex flex-col justify-center items-center"
+                        className="desktop:hidden flex flex-col justify-center items-center w-[300px] lg:w-[1000px] lg:max-w-[1000px]"
                     >
                         <h4 className="text-black font-sans-bartle text-lg md:text-2xl text-border-white my-4">START LIFTING!</h4>
                         <Link

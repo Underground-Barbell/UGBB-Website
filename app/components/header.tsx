@@ -35,14 +35,14 @@ export default function Header(){
                     id="LogoContainer"
                     className="transition duration-300 ease-in-out hover:scale-110"
                 >
-                    <Image src={UGBB} alt="UGBB Logo" className="w-[90px] h-[90px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px] active:border-4 active:border-white" />
+                    <Image src={UGBB} alt="UGBB Logo" className="w-[60px] h-[60px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px] active:border-4 active:border-white" />
                 </Link>
                 <div
                     className="flex justify-end"
                 >
                     <nav
                         id="NavContainer"
-                        className="hidden lg:visible bg-black text-white border-4 border-white w-full lg:flex lg:items-center lg:justify-between px-10 font-dosis font-extrabold text-2xl mr-10"
+                        className="hidden bg-black text-white border-4 border-white desktop:w-full desktop:flex desktop:items-center desktop:justify-between px-10 font-dosis font-extrabold desktop:text-2xl desktop:mr-10"
                     >
                         <Link
                             href="/#About"
@@ -85,11 +85,11 @@ export default function Header(){
                     </nav>
                     <button
                         id="MenuContainer"
-                        className="bg-black border-white border-4 w-[90px] h-[90px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px] text-white flex items-center justify-center transition duration-300 ease-in-out hover:scale-110  active:border-6 active:border-white"
+                        className="bg-black border-white border-4 w-[60px] h-[60px] md:w-[75px] md:h-[75px] lg:w-[65px] lg:h-[65px] text-white flex items-center justify-center transition duration-300 ease-in-out hover:scale-110  active:border-6 active:border-white"
                         onClick={() => setMenu(!menu)}
                     >
                         <Menu
-                            className="h-[75px] w-[75px] md:h-[60px] md:w-[60px] lg:h-[50px] lg:w-[50px]"
+                            className="h-[45px] w-[45px] md:h-[60px] md:w-[60px] lg:h-[50px] lg:w-[50px]"
                         />
                     </button>
                 </div>
@@ -110,7 +110,7 @@ export default function Header(){
                             <Link
                                 href="/"
                             >
-                                <Image src={UGBB} alt="UGBB Logo" className="w-[120px] h-[120px] md:w-[90px] md:h-[90px] lg:w-[65px] lg:h-[65px] transition duration-300 ease-in-out hover:scale-110 active:border-4 active:border-white" />
+                                <Image src={UGBB} alt="UGBB Logo" className="w-[60px] h-[60px] md:w-[90px] md:h-[90px] lg:w-[65px] lg:h-[65px] transition duration-300 ease-in-out hover:scale-110 active:border-4 active:border-white" />
                             </Link>
                             <button
                                 id="MenuContainer"
@@ -118,7 +118,7 @@ export default function Header(){
                                 onClick={() => setMenu(!menu)}
                             >
                                 <X
-                                    className="h-[105px] w-[105px] md:h-[75px] md:w-[75px] lg:h-[50px] lg:w-[50px]"
+                                    className="h-[45px] w-[45px] md:h-[75px] md:w-[75px] lg:h-[50px] lg:w-[50px]"
                                 />
                             </button>
                         </div>
@@ -126,12 +126,12 @@ export default function Header(){
                         <div
                             className="flex flex-col justify-center items-center"
                         >
-                            <Link href="/#About" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>ABOUT</Link>
-                            <Link href="/#Memberships" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>MEMBERSHIPS</Link>
-                            <Link href="/#Equipment" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>EQUIPMENT</Link>
-                            <Link href="/#Locations" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>LOCATIONS</Link>
-                            <Link href="/#Classes" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CLASSES/EVENTS</Link>
-                            <Link href="/#Contact" className="font-sans-bartle text-5xl bg-black p-4 border-white border-2 mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CONTACT</Link>
+                            <Link href="/#About" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>ABOUT</Link>
+                            <Link href="/#Memberships" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 mt-4 md:mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>MEMBERSHIPS</Link>
+                            <Link href="/#Equipment" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 mt-4 md:mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>EQUIPMENT</Link>
+                            <Link href="/#Locations" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 mt-4 md:mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>LOCATIONS</Link>
+                            <Link href="/#Classes" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 mt-4 md:mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CLASSES/EVENTS</Link>
+                            <Link href="/#Contact" className="font-sans-bartle lg:text-5xl bg-black p-4 border-white border-2 mt-4 md:mt-10 transition duration-300 ease-in-out hover:scale-110 active:underline underline-offset-5 decoration-2" onClick={() => setMenu(false)}>CONTACT</Link>
                         </div>
 
                     </div>

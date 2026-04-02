@@ -20,10 +20,10 @@ export default function ClassesCard(props: ClassesCardInterface) {
 
             <div
                 id="ClassesCardTitleContainer"
-                className="mb-8 lg:mb-15 w-full flex flex-col justify-center items-center"
+                className="mb-8 desktop:mb-15 w-full flex flex-col justify-center items-center"
             >
                 <h4 className="font-sans-bartle text-3xl md:text-4xl text-white text-border-red mb-2">{props.title}</h4>
-                <hr className="border-4 border-ugbb-red-main rounded-full w-4/5 lg:w-1/2"/>
+                <hr className="border-4 border-ugbb-red-main rounded-full w-4/5 desktop:w-1/2"/>
             </div>
 
             <div
@@ -32,7 +32,7 @@ export default function ClassesCard(props: ClassesCardInterface) {
             >
                 <div
                     id="ClassesCardInfoContainer"
-                    className="lg:w-[650px] bg-white rounded-4xl flex flex-col justify-center items-center relative"
+                    className="desktop:w-[650px] bg-white rounded-4xl flex flex-col justify-center items-center relative"
                 >
                     <Image
                         src={TempImage}
@@ -62,7 +62,7 @@ export default function ClassesCard(props: ClassesCardInterface) {
                                 >
                                     <X className="w-[45px] h-[45px] hover:scale-110 active:border-2 active:border-black"/>
                                 </button>
-                                <h2 className="font-sans-bartle text-border-white text-4xl mb-3">INFORMATION</h2>
+                                <h2 className="font-sans-bartle text-border-white text-lg desktop:text-4xl mb-3">INFORMATION</h2>
                                 <p className="text-white font-bold font-dosis">Lorem</p>
                             </div>
                         </div>

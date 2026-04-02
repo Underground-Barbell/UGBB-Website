@@ -18,14 +18,14 @@ export default function Contact(){
 
             <div
                 id="ContactCardContainer"
-                className="hidden bg-gray-300 h-[285px] w-8/10 rounded-4xl mt-10 lg:block"
+                className="hidden bg-gray-300 h-[285px] w-8/10 rounded-4xl mt-10 desktop:block"
             >
                 {socialView && (
                     <div
                         className="h-full flex justify-center items-center"
                     >
                         <button
-                            className="bg-gray-200 lg:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-left"
+                            className="bg-gray-200 desktop:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-left"
                             onClick={() => setSocialView(false)}
                         >
                             <div
@@ -60,7 +60,7 @@ export default function Contact(){
                         />
 
                         <button
-                            className="bg-gray-200 lg:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-right"
+                            className="bg-gray-200 desktop:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center animate-slide-in-right"
                             onClick={() => setSocialView(true)}
                         >
                             <div
@@ -76,7 +76,7 @@ export default function Contact(){
             </div>
             <div
                 id="ContactCardContainerMobile"
-                className="lg:hidden bg-gray-300 h-[500px] md:w-8/10 mx-3 lg:mx-0 rounded-4xl mt-10 flex justify-center items-center"
+                className="desktop:hidden bg-gray-300 h-[500px] md:w-8/10 mx-3 lg:mx-0 rounded-4xl mt-10 flex justify-center items-center"
             >
                 {socialView && (
                     <ContactCard

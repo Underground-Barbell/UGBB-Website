@@ -29,7 +29,7 @@ export default function EquipmentActionCard(props: EquipmentActionCardInterface)
     return (
         <button
             id="EquipmentActionCard"
-            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4 border-4 border-white lg:border-0 hover:scale-105 active:border-2 active:border-white"
+            className="flex justify-center items-center bg-black p-2 rounded-2xl mr-4 mb-4 border-4 border-white desktop:border-0 hover:scale-105 active:border-2 active:border-white"
             onClick={() => props.setAction(true)}
 
         >

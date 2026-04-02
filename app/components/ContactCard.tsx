@@ -17,7 +17,7 @@ export default function ContactCard(props: ContactCardInterface) {
     return (
         <div
             id="ContactCard"
-            className={`bg-gray-200 lg:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center ${props.customStyles}`}
+            className={`bg-gray-200 desktop:w-1/2 h-9/10 m-4 rounded-4xl flex flex-col justify-center items-center ${props.customStyles}`}
         >
             <div
                 id="ContactCardTitleContainer"
@@ -35,7 +35,7 @@ export default function ContactCard(props: ContactCardInterface) {
                 id="ContactCardDescriptionContainer"
                 className="flex justify-center items-center text-center bg-ugbb-red-main w-7/10 p-9 rounded-4xl mt-5"
             >
-                <p className="text-black font-bold font-dosis text-sm">{props.description}</p>
+                <p className="text-white font-bold font-dosis text-sm">{props.description}</p>
             </div>
 
             <Link
@@ -54,7 +54,7 @@ export default function ContactCard(props: ContactCardInterface) {
 
             <button
                 id="ContactCardMobileControlsContainer"
-                className="lg:hidden bg-ugbb-red-sec p-4 border-2 border-black rounded-4xl mt-4"
+                className="desktop:hidden bg-ugbb-red-sec p-4 border-2 border-black rounded-4xl mt-4"
                 onClick={() => props.setSocialView(props.title == "FACEBOOK")}
             >
                 <h5 className="font-sans-bartle text-sm text-white text-border">{props.title == "INSTAGRAM" ? "FACEBOOK" : "INSTAGRAM"}</h5>

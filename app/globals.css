@@ -4,6 +4,8 @@
 @import "tailwindcss";
 
 @theme {
+    --breakpoint-desktop: 100rem;
+
     --font-sans-bogle: "BBH Sans Bogle", sans-serif;
     --font-sans-bartle: "BBH Sans Bartle", sans-serif;
     --font-dosis: "Dosis", sans-serif;

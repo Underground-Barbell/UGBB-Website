@@ -79,7 +79,7 @@ export default function Memberships(){
                         >
                             <h3 className="text-black font-sans-bartle text-3xl text-border-white mb-4">BASIC</h3>
                             <hr className="border-4 text-white rounded-full mb-6 w-full"/>
-                            <h5 className="text-black font-sans-bartle text-3xl text-border-white mb-6">- 35$/MONTH -</h5>
+                            <h5 className="text-black font-sans-bartle text-2xl md:text-3xl text-border-white mb-6">- 35$/MONTH -</h5>
                             <Image src={BarbellIcon} alt="Barbell Icon" width={375} height={150} className="mb-6" />
                             <p className="text-white font-dosis font-bold mb-6">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac ipsum
@@ -104,7 +104,7 @@ export default function Memberships(){
                             className="text-center p-5 flex flex-col items-center"
                         >
                             <Link href="/">
-                                <span className="font-sans-bartle text-ugbb-red-sec text-xl mb-1">Visit Contact to Get Setup</span>
+                                <span className="font-sans-bartle text-ugbb-red-sec text-sm md:text-xl mb-1">Visit Contact to Get Setup</span>
                             </Link>
                         </div>
 
@@ -156,13 +156,13 @@ export default function Memberships(){
                         <div
                             className="flex flex-col justify-center items-center text-center mt-15"
                         >
-                            <h2 className="font-sans-bartle text-border-white text-4xl mb-3">INFORMATION</h2>
+                            <h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">INFORMATION</h2>
                             <p className="text-white font-bold font-dosis">{currentInfo.infoDesc}</p>
                         </div>
                         <div
                             className="flex flex-col justify-center items-center text-center mb-35"
                         >
-                            <h2 className="font-sans-bartle text-border-white text-4xl mb-3">DISCLAIMER</h2>
+                            <h2 className="font-sans-bartle text-border-white text-lg md:text-4xl mb-3">DISCLAIMER</h2>
                             <p className="text-white font-bold font-dosis">{currentInfo.discDesc}</p>
                         </div>
                     </div>

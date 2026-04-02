@@ -8,21 +8,21 @@ export default function Locations(){
     return (
         <section
             id="Locations"
-            className="bg-gray-100 flex flex-col lg:flex-row"
+            className="bg-gray-100 flex flex-col desktop:flex-row"
         >
             <div
                 id="LocationsMobileTitleContainer"
                 className="text-center"
             >
-                <h1 className="lg:hidden font-sans-bartle text-3xl md:text-5xl text-white text-border-red mt-15">LOCATIONS</h1>
+                <h1 className="desktop:hidden font-sans-bartle text-3xl md:text-5xl text-white text-border-red mt-15">LOCATIONS</h1>
             </div>
             <div
                 id="APIMapContainer"
-                className="lg:w-1/2 "
+                className="desktop:w-1/2 "
             >
                 <div
                     id="InnerAPIMapContainer"
-                    className="h-[650px] lg:h-[845px] border-4 border-ugbb-red-sec mx-4 lg:mx-15 my-5 rounded-4xl"
+                    className="h-[400px] desktop:h-[845px] border-4 border-ugbb-red-sec mx-4 desktop:mx-15 my-5 rounded-4xl"
                 >
                     <Map/>
                 </div>
@@ -30,9 +30,9 @@ export default function Locations(){
 
             <div
                 id="LocationsContainer"
-                className="lg:w-1/2 flex flex-col items-center"
+                className="desktop:w-1/2 flex flex-col items-center"
             >
-                <h1 className="hidden lg:block font-sans-bartle text-5xl text-white text-border-red mt-15">LOCATIONS</h1>
+                <h1 className="hidden desktop:block font-sans-bartle text-5xl text-white text-border-red mt-15">LOCATIONS</h1>
                 <div
                     id="LocationCardContainer"
                     className="mt-15 w-full"
