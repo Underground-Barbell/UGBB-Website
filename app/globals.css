@@ -1,14 +1,12 @@
-@import "https://fonts.google.com/specimen/BBH+Sans+Bogle";
-@import "https://fonts.google.com/specimen/BBH+Sans+Bartle";
-@import "https://fonts.google.com/specimen/Dosis";
 @import "tailwindcss";
 
 @theme {
     --breakpoint-desktop: 100rem;
 
-    --font-sans-bogle: "BBH Sans Bogle", sans-serif;
-    --font-sans-bartle: "BBH Sans Bartle", sans-serif;
-    --font-dosis: "Dosis", sans-serif;
+    /* Font files are loaded via next/font in app/layout.tsx */
+    --font-sans-bogle: var(--font-bbh-bogle), sans-serif;
+    --font-sans-bartle: var(--font-bbh-bartle), sans-serif;
+    --font-dosis: var(--font-dosis-google), sans-serif;
 
     --color-ugbb-red-main: #902923;
     --color-ugbb-red-sec: #A22C29;
